@@ -7,4 +7,7 @@ Control SCOM Maintenance Mode from the Agent with SCOMAgentHelper Management Pac
 https://monitoringguys.com/2020/07/30/control-scom-maintenance-mode-from-the-agent-with-scomagenthelper-management-pack/
 
 https://trycatchdebug.net/news/1382992/python-scsm-interaction
+This article explains how to interact with Microsoft System Center Service Manager (SCSM) using Python to
+make API calls, log tickets, create incidents, update records, and perform similar tasks.
+
 
