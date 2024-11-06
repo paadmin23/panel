@@ -35,3 +35,11 @@ Here are some lines from my response file
 
  Database Client Installation Guide for Microsoft Windows
  https://docs.oracle.com/en/database/oracle/oracle-database/19/ntcli/reasons-for-using-silent-mode-or-response-file-mode.html
+
+
+
+ How does CPU monitoring work in the Windows Server 2016 management pack?
+ https://kevinholman.com/2017/05/13/how-does-cpu-monitoring-work-in-the-windows-server-2016-management-pack/
+
+ SCOM 2016 dashboard view to display resource utilization of all servers
+ https://learn.microsoft.com/en-us/answers/questions/400683/scom-2016-dashboard-view-to-display-resource-utili
