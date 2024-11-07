@@ -45,3 +45,7 @@ Here are some lines from my response file
 
  SCOM 2016 dashboard view to display resource utilization of all servers
  https://learn.microsoft.com/en-us/answers/questions/400683/scom-2016-dashboard-view-to-display-resource-utili
+
+
+
+ https://kevinholman.com/2022/07/14/scom-dashboards-using-the-powershell-grid-widget/
