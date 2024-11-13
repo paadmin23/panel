@@ -1,5 +1,7 @@
 # panel
 
+https://www.red-gate.com/hub/product-learning/redgate-monitor/monitoring-your-servers-and-databases-scom-and-sql-monitor
+
 https://learn.microsoft.com/zh-cn/training/modules/implement-common-integration-features-finance-ops/10-exercise-1
 
 https://ccmexec.com/2019/11/how-to-provision-a-modern-application-during-osd/
