@@ -1,5 +1,8 @@
 # panel
 
+How many cores does the WDS server have? We could try to limit the number of logical processors by using the BCDEDIT command-line tool together with the NUMPROC setting. For example, run the following command:
+BCDEDIT /set NUMPROC 20
+
 https://flylib.com/books/en/1.158.1.37/1/
 
 https://www.red-gate.com/hub/product-learning/redgate-monitor/monitoring-your-servers-and-databases-scom-and-sql-monitor
