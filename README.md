@@ -1,5 +1,18 @@
 # panel
 
+SQL dig
+
+select * from MTV_Computer 
+
+select * from INFORMATION_SCHEMA.TABLES
+where TABLE_NAME like '%computer%'
+select * from INFORMATION_SCHEMA.COLUMNS
+where COLUMN_NAME  like '%mac%'
+
+https://kevinholman.com/2016/11/11/scom-sql-queries/
+
+
+
 
 Get-SCOMGroup -DisplayName "UR Computer Group" | Get-SCOMClassInstance | GM
 
