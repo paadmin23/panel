@@ -1,5 +1,10 @@
 # panel
 
+
+Get-SCOMGroup -DisplayName "UR Computer Group" | Get-SCOMClassInstance | GM
+
+Get-SCOMGroup -DisplayName "UR Computer Group" | Get-SCOMClassInstance | sort DisplayName |FT DisplayName
+
 How many cores does the WDS server have? We could try to limit the number of logical processors by using the BCDEDIT command-line tool together with the NUMPROC setting. For example, run the following command:
 BCDEDIT /set NUMPROC 20
 
