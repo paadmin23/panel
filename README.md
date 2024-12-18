@@ -1,5 +1,7 @@
 # panel
 
+https://community.spiceworks.com/t/wds-fails-to-start-when-obtain-ip-address-from-dchp-is-enabled/803866
+
 SQL dig
 
 select * from MTV_Computer 
