@@ -1,5 +1,46 @@
 # panel
 
+
+
+SELECT 
+    d.Name AS [Device Hostname],
+    CASE 
+        WHEN os.OSType = 'Windows' THEN 'Windows'
+        ELSE 'Unix'
+    END AS [Class],
+    'BLOGGS – EUCS' AS [Vendor],
+    d.SerialNumber AS [Serial Number],
+    d.AssetTag AS [Asset tag],
+    d.FITSCode AS [FITS Code],
+    d.Manufacturer AS [Manufacturer],
+    CONCAT(d.Manufacturer, ' ', d.Model) AS [Model ID],
+    CASE 
+        WHEN d.Status = 1 THEN 'In Use'
+        ELSE 'In Maintenance (offline)'
+    END AS [Status],
+    d.Comments AS [Comments],
+    d.Description AS [Description],
+    d.FQDN AS [FQDN],
+    CASE 
+        WHEN d.IsVirtual = 1 THEN 'Yes'
+        ELSE 'No'
+    END AS [Virtual],
+    'Production' AS [Environment],
+    os.OSName AS [Operating System]
+INTO 
+    OUTFILE '/path/to/output.csv'
+    FIELDS TERMINATED BY ',' 
+    ENCLOSED BY '"'
+    LINES TERMINATED BY '\n'
+FROM 
+    Device d
+JOIN 
+    OperatingSystem os ON d.OSId = os.Id
+WHERE 
+    d.Environment = 'Production';
+
+
+
 https://community.spiceworks.com/t/wds-fails-to-start-when-obtain-ip-address-from-dchp-is-enabled/803866
 
 SQL dig
