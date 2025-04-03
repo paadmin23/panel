@@ -1,5 +1,14 @@
 # panel
 
+$udpClient = New-Object System.Net.Sockets.UdpClient
+$udpClient.Connect("DomainControllerIPAddress", 53)
+$udpClient.Send([byte[]](0), 0)
+$response = $udpClient.Receive([ref]$remoteEndPoint)
+if ($response) {
+    Write-Host "Port 53 is accessible"
+} else {
+    Write-Host "Port 53 is not accessible"
+}
 
 
 SELECT 
